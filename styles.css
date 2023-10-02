@@ -85,7 +85,7 @@ hr {
 }
 
 .details {
-    height: 4vh;
+    height: 5vh;
     margin-bottom: 10px;
 }
 
@@ -93,4 +93,8 @@ hr {
     width: 100%;
     overflow-x: auto;
     white-space: nowrap;
+}
+
+.car-label {
+    margin-top: 2vh;
 }
