@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de autos</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Poppins:wght@300&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Lato:wght@300&family=Poppins:wght@300&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <!-- Setting up the navbar: -->
+    <nav id="navbar">
+        <ul>
+            <li><img src="images/logo.png" /></li>
+        </ul>
+    </nav>
+    <!-- Setting up the filter section: -->
+    <section class="filter">
+        <h2 class="title">Filtros</h2>
+        <input class="car-type-searchbar" placeholder="Tipo de auto..." />
+
+        <div class="checker">
+            <input id="compact" type="checkbox">
+            <label for="compact">Compactos</label>
+        </div>
+        <div class="checker">
+            <input id="sedan" type="checkbox">
+            <label for="sedan">Sedanes</label>
+        </div>
+        <div class="checker">
+            <input id="suv" type="checkbox">
+            <label for="suv">SUVs</label>
+        </div>
+        <div class="checker">
+            <input id="van" type="checkbox">
+            <label for="van">Camionetas</label>
+        </div>
+        
+        <div id="price-range">
+            <input class="car-type-searchbar" placeholder="Rango de precios..." />
+
+            <div class="checker">
+                <input id="50k" type="checkbox">
+                <label for="50k">&lt $50.000 /h</label>
+            </div>
+            <div class="checker">
+                <input id="100k" type="checkbox">
+                <label for="100k">&lt $100.000 /h</label>
+            </div>
+            <div class="checker">
+                <input id="150k" type="checkbox">
+                <label for="150k">&lt $150.000 /h</label>
+            </div>
+            <div class="checker">
+                <input id="200k" type="checkbox">
+                <label for="200k">&lt $200.000 /h</label>
+            </div>
+            <div class="checker">
+                <input id="+200k" type="checkbox">
+                <label for="+200k">+ $50.000 /h</label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setting up the results section: -->
+    <section class="search">
+        <input class="search-car" placeholder="Busca tu automóvil ideal:" >
+        
+        <h2 class="title">Sección 1: Arriendo de vehículos económicos</h2>
+        <hr />
+
+        <!-- Making every car 'cell': -->
+        <div class="container">
+            <div class="car-display">
+                <div class="car" id="car1">
+                    <button class="btn btn-primary details">Más detalles</button>
+                </div>
+                <label for="car1">
+                    <p>Nombre del vehículo 1</p>
+                    <p>Especificaciones</p>
+                </label>
+            </div>
+            <div class="car-display">
+                <div class="car" id="car2">
+                    <button class="btn btn-primary details">Más detalles</button>
+                </div>
+                <label for="car2">
+                    <p>Nombre del vehículo 2</p>
+                    <p>Especificaciones</p>
+                </label>
+            </div>
+            <div class="car-display">
+                <div class="car" id="car3">
+                    <button class="btn btn-primary details">Más detalles</button>
+                </div>
+                <label for="car3">
+                    <p>Nombre del vehículo 3</p>
+                    <p>Especificaciones</p>
+                </label>
+            </div>
+            <div class="car-display">
+                <div class="car" id="car3">
+                    <button class="btn btn-primary details">Más detalles</button>
+                </div>
+                <label for="car3">
+                    <p>Nombre del vehículo 3</p>
+                    <p>Especificaciones</p>
+                </label>
+            </div>
+            <div class="car-display">
+                <div class="car" id="car4">
+                    <button class="btn btn-primary details">Más detalles</button>
+                </div>
+                <label for="car4">
+                    <p>Nombre del vehículo 4</p>
+                    <p>Especificaciones</p>
+                </label>
+            </div>
+        </div>
+
+
+    </section>
+
+</body>
+</html>
